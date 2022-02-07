@@ -7,11 +7,13 @@
     <script src="script.js"></script>
     <title>Rock Paper Scissors</title>
 </head>
-<body>
+<body style="font-family: 'Courier New', Courier, monospace;">
     <h1>Rock, Paper, Scissors</h1>
     <h3 id="inputResult">Your Input?</h3>
+    <h3 id="computerInput">The computer is thinking...</h3>
     <input id="userInput" type="text" placeholder="type Rock, Paper or Scissors"/>
     <button onclick="getUserChoice()">Ready?</button> <button onclick="getComputerChoice()">Ready Up The Computer</button>
-    
+    <button onclick="determineWinner(userInput, computerChoice)">Go!</button>
+    <h2 id="winner">Who's gonna win???</h2>
 </body>
 </html>
